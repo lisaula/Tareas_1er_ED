@@ -24,6 +24,8 @@ private slots:
 
     void on_Eliminar_clicked();
 
+    void on_Buscar_clicked();
+
 private:
     Ui::Widget *ui;
     Arreglo *arr;

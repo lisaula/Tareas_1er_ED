@@ -100,6 +100,19 @@
    </widget>
    <widget class="QLineEdit" name="Posicion"/>
   </widget>
+  <widget class="QPushButton" name="Buscar">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>130</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -94,9 +94,13 @@ void Widget::on_Insertar_clicked()
         QMessageBox::warning(this,"Error","LISTA LLENA");
     }else{
         int pos = p.toInt();
-        char v=valor[0];
-        cursor->insertar(lista_actual,pos,v);
-        insertarObjeto();
+        if(pos!=0){
+            char v=valor[0];
+            cursor->insertar(lista_actual,pos,v);
+            insertarObjeto();
+        }else{
+            QMessageBox::warning(this,"Error","No existe posicion 0");
+        }
     }
 }
 
@@ -122,4 +126,16 @@ void Widget::on_pushButton_clicked()
     ui->add->setText("");
     ui->pos->setText("");
     ui->Lista->setText("");
+}
+
+void Widget::on_Buscar_clicked()
+{
+    QString t = ui->add->text();
+    string v= t.toStdString();
+    if(cursor->buscar(v[0])){
+        QMessageBox::information(this,"Buscar","Si encontro el elemento");
+    }else{
+        QMessageBox::information(this,"Buscar","No encontro el elemento");
+    }
+    //ui->add->setText("");
 }

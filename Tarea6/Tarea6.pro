@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     nodoc.cpp \
     cola.cpp \
     pilagraph.cpp \
-    colagraph.cpp
+    colagraph.cpp \
+    form.cpp
 
 HEADERS  += widget.h \
     pila.h \
@@ -27,8 +28,10 @@ HEADERS  += widget.h \
     nodoc.h \
     cola.h \
     pilagraph.h \
-    colagraph.h
+    colagraph.h \
+    form.h
 
 FORMS    += widget.ui \
     pilagraph.ui \
-    colagraph.ui
+    colagraph.ui \
+    form.ui

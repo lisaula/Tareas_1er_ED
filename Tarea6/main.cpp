@@ -1,4 +1,5 @@
 #include "widget.h"
+#include "form.h"
 #include <QApplication>
 #include "cola.h"
 #include "pila.h"

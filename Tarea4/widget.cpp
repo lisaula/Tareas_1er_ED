@@ -59,3 +59,14 @@ void Widget::on_Eliminar_clicked()
     insertarObjeto();
     ui->extra->setVisible(true);
 }
+
+void Widget::on_Buscar_clicked()
+{
+    QString t= ui->Add->text();
+    if(l->buscar(t.toInt(),l->raiz)!=NULL){
+        QMessageBox::information(this,"Buscar","Si encontro al elemento");
+    }else{
+         QMessageBox::information(this,"Buscar","No encontro al elemento");
+    }
+    ui->Add->setText("");
+}

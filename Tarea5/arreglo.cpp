@@ -137,6 +137,20 @@ void Arreglo::addList(string name){
     ls.push_back(new Lista(name));
 }
 
+bool Arreglo::buscar(char c)
+{
+    Nodo *temp = arr[0];
+    int cont=0;
+    while(cont<10){
+        if(temp->valor==c){
+            return true;
+        }
+        cont++;
+        temp=arr[cont];
+    }
+    return false;
+}
+
 Lista* Arreglo::seekList(string name){
     int size=ls.size();
     int x=0;

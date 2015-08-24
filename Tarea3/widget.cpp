@@ -69,3 +69,14 @@ void Widget::on_Eliminar_clicked()
      ui->Agregar_2->setText("");
 
 }
+
+void Widget::on_Buscar_clicked()
+{
+    QString t= ui->Agregar_2->text();
+    if(arr->buscar(t.toInt())>0){
+        QMessageBox::information(this,"Buscar","Si se encontro al elemento");
+    }else{
+        QMessageBox::information(this,"Buscar","No se encontro al elemento");
+    }
+    ui->Agregar_2->setText("");
+}

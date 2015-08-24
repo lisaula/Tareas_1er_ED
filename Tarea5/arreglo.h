@@ -20,6 +20,7 @@ public:
     int buscar(int l,char valor);
     int getPosicion(Lista*l, int p);
     void addList(string name);
+    bool buscar(char c);
     Lista* seekList(string name);
     QString imprimirLista(string name);
     QString printArr();
